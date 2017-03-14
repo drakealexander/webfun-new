@@ -1,0 +1,42 @@
+<!doctype.html>
+<html>
+<head>
+  <title>The Magic 8-Ball</title>
+</head>
+<style>
+  input { 
+    width:300px;
+  }
+  body {
+    text-align: center;
+    font-family: Sans-serif;
+    color: red;
+    background:black;
+    margin-left: 3em;
+  }
+  h1 {
+    color:orange;
+  }
+  img {
+    margin-left:1em;
+    width:15%
+  }
+</style>
+<script>
+  var answers = [
+    'Yes','No','God No!','Please, for the love of god, never again',
+    'Maybe','Probably','Never.','Ask Again','Not a big chance',
+    'Why?','I think so','Dude, no','...','Error Code 403: Please Ask Again',
+    'GO do human things'];
+document.getElementById('answerButton').onclick = function (){
+
+</script>
+<div>
+  <img src = "assets/eightball">
+</div>
+<p id = "questionPrompt">Your Wishes, My Command</p>
+<input type="text" placeholder="Whats Up?"></input>
+<button id="answerButton">Magic Button</button>
+<p id="answerContainer"></p>
+</body>
+</html>
