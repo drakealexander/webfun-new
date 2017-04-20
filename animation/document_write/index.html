@@ -14,12 +14,81 @@
         border: 5px solid red;
         border-radius: 10%;
       }
+      div.shape {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+      }
+
+    div.my-icon {
+        position: relative;
+    }
+    .my-icon > i {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        border: 0.5454545454545454em solid #f4edbb;
+        border-radius: 0.5454545454545454em;
+        left: 0em;
+        top: 0em;
+    }
+    .my-icon > i+i {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        border: 0.2727272727272727em solid #1745ce;
+        border-radius: 0.2727272727272727em;
+        left: 0.2727272727272727em;
+        top: 0.2727272727272727em;
+    }
+    .my-icon > i+i+i {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        border: 0.5454545454545454em solid #f4edbb;
+        border-radius: 0.5454545454545454em;
+        left: 1.909090909090909em;
+        top: 0em;
+    }
+    .my-icon > i+i+i+i {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        border: 0.2727272727272727em solid #2951c7;
+        border-radius: 0.2727272727272727em;
+        left: 2.1818181818181817em;
+        top: 0.2727272727272727em;
+    }
+    .my-icon > i+i+i+i+i {
+        position: absolute;
+        display: inline-block;
+        width: 3em;
+        height: 1.0909090909090908em;
+        background-color: #f4edbb;
+        left: 0em;
+        top: 1.6363636363636362em;
+    }
+
     </style>
   </head>
   <body>
-      <div class ="start">Hello</div>
+      <div class ="start" contenteditable>Hello</div>
       <div class ="start">Hi</div>
       <div class ="start">Hey</div>
+      <div class ="shape">
+        <div class="my-icon"><i></i><i></i><i></i><i></i><i></i></i></div>
+      </div>
   </body>
 </html>
 
